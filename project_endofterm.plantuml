@@ -1,0 +1,362 @@
+@startuml
+
+title __PROJECT_ENDOFTERM's Class Diagram__\n
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.Add_city {
+        - autoCompleteTextView : AutoCompleteTextView
+        - btn_add : Button
+        - btn_back : Button
+        + onClick()
+        # onCreate()
+        - bindView()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.City {
+        - isSelect : String
+        - name : String
+        + getIsSelect()
+        + getName()
+        + setIsSelect()
+        + setName()
+        + toString2()
+        ~ City()
+        ~ City()
+        ~ City()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.CityAdapter {
+        - context : Context
+        - listCity : List<City>
+        + CityAdapter()
+        + getCount()
+        + getItem()
+        + getItemId()
+        + getView()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.CityAdapter.ViewHolder {
+        ~ cityDelete : TextView
+        ~ cityName : TextView
+        ~ citySet : TextView
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.CityOperator {
+        - db : SQLiteDatabase
+        + CityOperator()
+        + add()
+        + delete()
+        + getIsExist()
+        + getIsSelectCity()
+        + getItemCity()
+        + update()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.Fragment1 {
+        ~ string_city : String
+        - cond_txt_d0 : TextView
+        - cond_txt_d1 : TextView
+        - cond_txt_d2 : TextView
+        - cond_txt_d3 : TextView
+        - cond_txt_d4 : TextView
+        - cond_txt_d5 : TextView
+        - cond_txt_d6 : TextView
+        - cond_txt_n0 : TextView
+        - cond_txt_n1 : TextView
+        - cond_txt_n2 : TextView
+        - cond_txt_n3 : TextView
+        - cond_txt_n4 : TextView
+        - cond_txt_n5 : TextView
+        - cond_txt_n6 : TextView
+        - date0 : TextView
+        - date1 : TextView
+        - date2 : TextView
+        - date3 : TextView
+        - date4 : TextView
+        - date5 : TextView
+        - date6 : TextView
+        - day0 : TextView
+        - day1 : TextView
+        - day2 : TextView
+        - day3 : TextView
+        - day4 : TextView
+        - day5 : TextView
+        - day6 : TextView
+        - handler : Handler
+        - img_d0 : ImageView
+        - img_d1 : ImageView
+        - img_d2 : ImageView
+        - img_d3 : ImageView
+        - img_d4 : ImageView
+        - img_d5 : ImageView
+        - img_d6 : ImageView
+        - img_n0 : ImageView
+        - img_n1 : ImageView
+        - img_n2 : ImageView
+        - img_n3 : ImageView
+        - img_n4 : ImageView
+        - img_n5 : ImageView
+        - img_n6 : ImageView
+        - string_weather_forcast : String
+        - tmp_max0 : TextView
+        - tmp_max1 : TextView
+        - tmp_max2 : TextView
+        - tmp_max3 : TextView
+        - tmp_max4 : TextView
+        - tmp_max5 : TextView
+        - tmp_max6 : TextView
+        - tmp_min0 : TextView
+        - tmp_min1 : TextView
+        - tmp_min2 : TextView
+        - tmp_min3 : TextView
+        - tmp_min4 : TextView
+        - tmp_min5 : TextView
+        - tmp_min6 : TextView
+        - tv_updata : TextView
+        - value1 : List<PointValue>
+        - value2 : List<PointValue>
+        - view : View
+        - wind_dir0 : TextView
+        - wind_dir1 : TextView
+        - wind_dir2 : TextView
+        - wind_dir3 : TextView
+        - wind_dir4 : TextView
+        - wind_dir5 : TextView
+        - wind_dir6 : TextView
+        - wind_sc0 : TextView
+        - wind_sc1 : TextView
+        - wind_sc2 : TextView
+        - wind_sc3 : TextView
+        - wind_sc4 : TextView
+        - wind_sc5 : TextView
+        - wind_sc6 : TextView
+        - x : float[]
+        - y1 : float[]
+        - y2 : float[]
+        + Fragment1()
+        + getResource()
+        + onCreateView()
+        + setUserVisibleHint()
+        - bindView()
+        - draw()
+        - getData()
+        - parseData()
+        - setImgView()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.Fragment2 {
+        ~ string_city : String
+        ~ view : View
+        - air_txt : TextView
+        - air_type : TextView
+        - comf_txt : TextView
+        - comf_type : TextView
+        - cond_txt0 : TextView
+        - cond_txt1 : TextView
+        - cond_txt2 : TextView
+        - cond_txt3 : TextView
+        - cond_txt4 : TextView
+        - cond_txt5 : TextView
+        - cond_txt6 : TextView
+        - cond_txt7 : TextView
+        - cw_txt : TextView
+        - cw_type : TextView
+        - drsg_txt : TextView
+        - drsg_type : TextView
+        - flu_txt : TextView
+        - flu_type : TextView
+        - handler : Handler
+        - sport_txt : TextView
+        - sport_type : TextView
+        - string_Lifestyle_forcast : String
+        - string_hourly_weather_forcast : String
+        - time0 : TextView
+        - time1 : TextView
+        - time2 : TextView
+        - time3 : TextView
+        - time4 : TextView
+        - time5 : TextView
+        - time6 : TextView
+        - time7 : TextView
+        - tmp0 : TextView
+        - tmp1 : TextView
+        - tmp2 : TextView
+        - tmp3 : TextView
+        - tmp4 : TextView
+        - tmp5 : TextView
+        - tmp6 : TextView
+        - tmp7 : TextView
+        - trav_txt : TextView
+        - trav_type : TextView
+        - tv_update : TextView
+        - uv_txt : TextView
+        - uv_type : TextView
+        - wind_dir0 : TextView
+        - wind_dir1 : TextView
+        - wind_dir2 : TextView
+        - wind_dir3 : TextView
+        - wind_dir4 : TextView
+        - wind_dir5 : TextView
+        - wind_dir6 : TextView
+        - wind_dir7 : TextView
+        - wind_sc0 : TextView
+        - wind_sc1 : TextView
+        - wind_sc2 : TextView
+        - wind_sc3 : TextView
+        - wind_sc4 : TextView
+        - wind_sc5 : TextView
+        - wind_sc6 : TextView
+        - wind_sc7 : TextView
+        + Fragment2()
+        + onCreateView()
+        + setUserVisibleHint()
+        ~ bindView()
+        ~ draw()
+        ~ getData()
+        ~ parseData()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.Fragment3 {
+        - button : Button
+        - cityList : List<City>
+        - list_city : ListView
+        - view : View
+        + Fragment3()
+        + onActivityResult()
+        + onClick()
+        + onCreateView()
+        - bindView()
+        - draw()
+        - nameExistInList()
+        - updateCurrentCity()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.GetData {
+        {static} + getJson()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.MainActivity {
+        {static} + PAGE_ONE : int
+        {static} + PAGE_THREE : int
+        {static} + PAGE_TWO : int
+        - fragments : List<Fragment>
+        - rb0 : RadioButton
+        - rb1 : RadioButton
+        - rb2 : RadioButton
+        - rg_tab_bar : RadioGroup
+        - textView : TextView
+        - vpager : ViewPager
+        + onCheckedChanged()
+        + onPageScrollStateChanged()
+        + onPageScrolled()
+        + onPageSelected()
+        # onCreate()
+        - bindViews()
+        - isNetworkConnected()
+        - showDialog()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.MyFragmentPagerAdapter {
+        - PAGER_COUNT : int
+        - fragments : List<Fragment>
+        + MyFragmentPagerAdapter()
+        + destroyItem()
+        + getCount()
+        + getItem()
+        + instantiateItem()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.MySQHelper {
+        {static} + CREATE_USERDATA : String
+        - mContext : Context
+        + MySQHelper()
+        + onCreate()
+        + onUpgrade()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.StreamTool {
+        {static} + read()
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    class com.example.a19093.project_endofterm.VariableApp {
+        {static} - instance : VariableApp
+        {static} + getInstance()
+        + onCreate()
+    }
+  }
+  
+
+  com.example.a19093.project_endofterm.Add_city .up.|> android.view.View.OnClickListener
+  com.example.a19093.project_endofterm.Add_city -up-|> android.support.v7.app.AppCompatActivity
+  com.example.a19093.project_endofterm.CityAdapter -up-|> android.widget.BaseAdapter
+  com.example.a19093.project_endofterm.CityAdapter o-- com.example.a19093.project_endofterm.CityOperator : cityOperator
+  com.example.a19093.project_endofterm.CityAdapter +-down- com.example.a19093.project_endofterm.CityAdapter.ViewHolder
+  com.example.a19093.project_endofterm.CityOperator o-- com.example.a19093.project_endofterm.MySQHelper : dbHelper
+  com.example.a19093.project_endofterm.Fragment1 -up-|> android.support.v4.app.Fragment
+  com.example.a19093.project_endofterm.Fragment1 o-- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast : weeklyWeatherForecast
+  com.example.a19093.project_endofterm.Fragment2 -up-|> android.support.v4.app.Fragment
+  com.example.a19093.project_endofterm.Fragment2 o-- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast : hourlyWeatherForecast
+  com.example.a19093.project_endofterm.Fragment2 o-- com.example.a19093.project_endofterm.Request.LifestyleForecast : lifestyleForecast
+  com.example.a19093.project_endofterm.Fragment3 .up.|> android.view.View.OnClickListener
+  com.example.a19093.project_endofterm.Fragment3 -up-|> android.support.v4.app.Fragment
+  com.example.a19093.project_endofterm.Fragment3 o-- com.example.a19093.project_endofterm.CityAdapter : adapter
+  com.example.a19093.project_endofterm.Fragment3 o-- com.example.a19093.project_endofterm.CityOperator : cityOperator
+  com.example.a19093.project_endofterm.MainActivity .up.|> android.support.v4.view.ViewPager.OnPageChangeListener
+  com.example.a19093.project_endofterm.MainActivity .up.|> android.widget.RadioGroup.OnCheckedChangeListener
+  com.example.a19093.project_endofterm.MainActivity -up-|> android.support.v7.app.AppCompatActivity
+  com.example.a19093.project_endofterm.MainActivity o-- com.example.a19093.project_endofterm.MyFragmentPagerAdapter : mAdapter
+  com.example.a19093.project_endofterm.MyFragmentPagerAdapter -up-|> android.support.v4.app.FragmentPagerAdapter
+  com.example.a19093.project_endofterm.MyFragmentPagerAdapter o-- com.example.a19093.project_endofterm.Fragment1 : myFragment1
+  com.example.a19093.project_endofterm.MyFragmentPagerAdapter o-- com.example.a19093.project_endofterm.Fragment2 : myFragment2
+  com.example.a19093.project_endofterm.MyFragmentPagerAdapter o-- com.example.a19093.project_endofterm.Fragment3 : myFragment3
+  com.example.a19093.project_endofterm.MySQHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.a19093.project_endofterm.VariableApp -up-|> android.app.Application
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

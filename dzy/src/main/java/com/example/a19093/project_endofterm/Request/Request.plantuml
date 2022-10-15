@@ -1,0 +1,392 @@
+@startuml
+
+title __REQUEST's Class Diagram__\n
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.HourlyWeatherForecast {
+          - HeWeather6 : List<HeWeather6Bean>
+          + getHeWeather6()
+          + setHeWeather6()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean {
+          - hourly : List<HourlyBean>
+          - status : String
+          + getBasic()
+          + getHourly()
+          + getStatus()
+          + getUpdate()
+          + setBasic()
+          + setHourly()
+          + setStatus()
+          + setUpdate()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.BasicBean {
+          - admin_area : String
+          - cid : String
+          - cnty : String
+          - lat : String
+          - location : String
+          - lon : String
+          - parent_city : String
+          - tz : String
+          + getAdmin_area()
+          + getCid()
+          + getCnty()
+          + getLat()
+          + getLocation()
+          + getLon()
+          + getParent_city()
+          + getTz()
+          + setAdmin_area()
+          + setCid()
+          + setCnty()
+          + setLat()
+          + setLocation()
+          + setLon()
+          + setParent_city()
+          + setTz()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.HourlyBean {
+          - cloud : String
+          - cond_code : String
+          - cond_txt : String
+          - dew : String
+          - hum : String
+          - pop : String
+          - pres : String
+          - time : String
+          - tmp : String
+          - wind_deg : String
+          - wind_dir : String
+          - wind_sc : String
+          - wind_spd : String
+          + getCloud()
+          + getCond_code()
+          + getCond_txt()
+          + getDew()
+          + getHum()
+          + getPop()
+          + getPres()
+          + getTime()
+          + getTmp()
+          + getWind_deg()
+          + getWind_dir()
+          + getWind_sc()
+          + getWind_spd()
+          + setCloud()
+          + setCond_code()
+          + setCond_txt()
+          + setDew()
+          + setHum()
+          + setPop()
+          + setPres()
+          + setTime()
+          + setTmp()
+          + setWind_deg()
+          + setWind_dir()
+          + setWind_sc()
+          + setWind_spd()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.UpdateBean {
+          - loc : String
+          - utc : String
+          + getLoc()
+          + getUtc()
+          + setLoc()
+          + setUtc()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.LifestyleForecast {
+          - HeWeather6 : List<HeWeather6Bean>
+          + getHeWeather6()
+          + setHeWeather6()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean {
+          - lifestyle : List<LifestyleBean>
+          - status : String
+          + getBasic()
+          + getLifestyle()
+          + getStatus()
+          + getUpdate()
+          + setBasic()
+          + setLifestyle()
+          + setStatus()
+          + setUpdate()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.BasicBean {
+          - admin_area : String
+          - cid : String
+          - cnty : String
+          - lat : String
+          - location : String
+          - lon : String
+          - parent_city : String
+          - tz : String
+          + getAdmin_area()
+          + getCid()
+          + getCnty()
+          + getLat()
+          + getLocation()
+          + getLon()
+          + getParent_city()
+          + getTz()
+          + setAdmin_area()
+          + setCid()
+          + setCnty()
+          + setLat()
+          + setLocation()
+          + setLon()
+          + setParent_city()
+          + setTz()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.LifestyleBean {
+          - brf : String
+          - txt : String
+          - type : String
+          + getBrf()
+          + getTxt()
+          + getType()
+          + setBrf()
+          + setTxt()
+          + setType()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.UpdateBean {
+          - loc : String
+          - utc : String
+          + getLoc()
+          + getUtc()
+          + setLoc()
+          + setUtc()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast {
+          - HeWeather6 : List<HeWeather6Bean>
+          + getHeWeather6()
+          + setHeWeather6()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean {
+          - daily_forecast : List<DailyForecastBean>
+          - status : String
+          + getBasic()
+          + getDaily_forecast()
+          + getStatus()
+          + getUpdate()
+          + setBasic()
+          + setDaily_forecast()
+          + setStatus()
+          + setUpdate()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.BasicBean {
+          - admin_area : String
+          - cid : String
+          - cnty : String
+          - lat : String
+          - location : String
+          - lon : String
+          - parent_city : String
+          - tz : String
+          + getAdmin_area()
+          + getCid()
+          + getCnty()
+          + getLat()
+          + getLocation()
+          + getLon()
+          + getParent_city()
+          + getTz()
+          + setAdmin_area()
+          + setCid()
+          + setCnty()
+          + setLat()
+          + setLocation()
+          + setLon()
+          + setParent_city()
+          + setTz()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.DailyForecastBean {
+          - cond_code_d : String
+          - cond_code_n : String
+          - cond_txt_d : String
+          - cond_txt_n : String
+          - date : String
+          - hum : String
+          - mr : String
+          - ms : String
+          - pcpn : String
+          - pop : String
+          - pres : String
+          - sr : String
+          - ss : String
+          - tmp_max : String
+          - tmp_min : String
+          - uv_index : String
+          - vis : String
+          - wind_deg : String
+          - wind_dir : String
+          - wind_sc : String
+          - wind_spd : String
+          + getCond_code_d()
+          + getCond_code_n()
+          + getCond_txt_d()
+          + getCond_txt_n()
+          + getDate()
+          + getHum()
+          + getMr()
+          + getMs()
+          + getPcpn()
+          + getPop()
+          + getPres()
+          + getSr()
+          + getSs()
+          + getTmp_max()
+          + getTmp_min()
+          + getUv_index()
+          + getVis()
+          + getWind_deg()
+          + getWind_dir()
+          + getWind_sc()
+          + getWind_spd()
+          + setCond_code_d()
+          + setCond_code_n()
+          + setCond_txt_d()
+          + setCond_txt_n()
+          + setDate()
+          + setHum()
+          + setMr()
+          + setMs()
+          + setPcpn()
+          + setPop()
+          + setPres()
+          + setSr()
+          + setSs()
+          + setTmp_max()
+          + setTmp_min()
+          + setUv_index()
+          + setVis()
+          + setWind_deg()
+          + setWind_dir()
+          + setWind_sc()
+          + setWind_spd()
+      }
+    }
+  }
+  
+
+  namespace com.example.a19093.project_endofterm {
+    namespace Request {
+      class com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.UpdateBean {
+          - loc : String
+          - utc : String
+          + getLoc()
+          + getUtc()
+          + setLoc()
+          + setUtc()
+      }
+    }
+  }
+  
+
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast +-down- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.BasicBean : basic
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.UpdateBean : update
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.BasicBean
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.HourlyBean
+  com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.HourlyWeatherForecast.HeWeather6Bean.UpdateBean
+  com.example.a19093.project_endofterm.Request.LifestyleForecast +-down- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean
+  com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.BasicBean : basic
+  com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.UpdateBean : update
+  com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.BasicBean
+  com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.LifestyleBean
+  com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.LifestyleForecast.HeWeather6Bean.UpdateBean
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast +-down- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.BasicBean : basic
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean o-- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.UpdateBean : update
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.BasicBean
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.DailyForecastBean
+  com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean +-down- com.example.a19093.project_endofterm.Request.WeeklyWeatherForecast.HeWeather6Bean.UpdateBean
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
